@@ -1,0 +1,438 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+.main-body {
+    background: url(./images/home/bg-pattern-header.svg);
+    background-repeat: no-repeat;
+    background-position: 120% -40%;
+    background-size: 50%;
+}
+
+.background {
+    min-height: 100vh;
+    min-width: 25rem;
+    background-color: rgba(37, 41, 58, 1);
+    background-image: url(./images/sign-up/bg-pattern-side.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top: -4%;
+    right: 0;
+    z-index: -1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2.5rem, 4.4444vw + 2.2222rem, 3.5rem);
+    color: rgba(51, 57, 80, 1);
+    margin-bottom: 0;
+}
+
+h2 {
+    color: rgba(51, 57, 80, 1);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75em;
+    margin: 0;
+}
+
+.pro h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.price {
+    color: rgba(51, 57, 80, 1);
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.price-info {
+    color: rgba(51, 57, 80, 1);
+}
+
+.price-info, .plan-info p {
+    font-size: 1rem;
+    line-height: 1.75em;
+}
+
+.plan-info p {
+    color: rgba(116, 123, 149, 1);
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgba(116, 123, 149, 1);
+    margin-bottom: 0;
+}
+
+.get-started-btn {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(81, 117, 255, 1);
+}
+
+.get-started-btn, .try-btn {
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: 1.75em;
+    padding: 0.875em 2.625em;
+    border-radius: 1.75em;
+    border: none;
+    margin-top: 1.375rem;
+    cursor: pointer;
+    transition: all .25s ease-in;
+}
+
+.try-btn {
+    color: rgba(81, 117, 255, 1);
+    background-color: rgba(81, 117, 255, .15);
+}
+
+.pro .try-btn {
+    color: rgba(81, 117, 255, 1);
+    background-color: #fff;
+}
+
+.get-started-btn:hover, .get-started-btn:focus {
+    background-color: rgba(130, 156, 255, 1);
+}
+
+.pro p,
+.pro .plan-info p {
+    color: #fff;
+}
+
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 3rem;
+    letter-spacing: 0.313rem;
+}
+
+h3 .coming {
+    color: rgba(255, 255, 255, 1);
+}
+
+.signup-counter-main h3 .coming {
+    color: rgba(37, 41, 58, 1);
+}
+
+h3 .date {
+    color: rgba(81, 117, 255, 1);
+}
+
+.time-unit {
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+    line-height: clamp(1.75rem, 3rem, 3.5rem);
+    text-align: center;
+}
+
+.unit-main {
+    color: #fff;
+}
+
+.unit-sign {
+    color: rgba(81, 117, 255, 1);
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(116, 123, 149, .5);
+    mix-blend-mode: normal;
+    font: inherit;
+    margin: 1em;
+    padding: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+    min-height: 110vh;
+}
+
+.signup-main .hero-section {
+    min-height: 10vh;
+}
+
+.card-container {
+    width: 70%;
+    margin: 10em auto 1em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    transform: translate(25%, -110%);
+}
+
+article {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.25);
+    padding: 2em 3em;
+    border-radius: 13px;
+}
+
+.pro {
+    background-color: rgba(81, 117, 255, 1);
+    background-image: url(./images/home/bg-pattern-pricing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% -13em;
+}
+
+footer {
+    background-color: rgba(37, 41, 58, 1);
+    background-image: url(./images/home/bg-pattern-footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -25em;
+    min-height: 40vh;
+    position: relative;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    padding: 8em 0;
+}
+
+.footer-container > button {
+    margin-left: auto;
+    display: block;
+    margin-top: -5%;
+}
+
+.counter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+.days, .hours, .minutes, .seconds {
+    background-color: rgba(51, 57, 80, 1);
+    padding: 2em 2em;
+    border-radius: 13px;
+}
+
+.signup-counter .days, .signup-counter .hours, .signup-counter .minutes, .signup-counter .seconds {
+    background-color: rgba(81, 117, 255, .25);
+}
+
+.signup-counter .days p,
+.signup-counter .hours p,
+.signup-counter .minutes p,
+.signup-counter .seconds p {
+    color: rgba(51, 57, 80, 1);
+}
+
+.days p,
+.hours p,
+.minutes p,
+.seconds p {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-align: center;
+    opacity: .5;
+    mix-blend-mode: normal;
+}
+
+.seconds .time-unit {
+    min-width: 90px;
+}
+
+form {
+    background-color: #fff;
+    padding: 2em;
+    display: grid;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.25);
+    border-radius: 13px;
+}
+
+select {
+    width: 85%;
+    margin: 1em auto;
+    border: none;
+    border-bottom: 1px solid rgba(116, 123, 149, .5);
+    font: inherit;
+    padding: 1em;
+    background: url(./images/sign-up/icon-arrow-down.svg) no-repeat right .8em center;
+    appearance: none;
+    font-weight: bold;
+}
+
+option {
+    margin: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    body, html {
+        width: 100%;
+    }
+    
+    .container {
+        padding-bottom: 50vh;
+    }
+    
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        top: 0;
+        left: 0;
+        transform: translate(25%, -105%);
+    }
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+    }
+
+    .top > * {
+        margin: 0;
+    }
+
+    article button {
+        margin-right: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-container>button {
+        margin: 2em auto 1em auto;
+    }
+
+    .background {
+        bottom: 0;
+        min-height: 40vh;
+        top: auto;
+        width: 100%;
+    }
+
+    .signup-counter-main {
+        margin: 0;
+    }
+
+    .signup-main .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    .signup-main .hero-section .hero-text {
+        width: 100%;
+    }
+
+    .signup-main .hero-section .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-position: center;
+    }
+
+    .container {
+        padding-bottom: 100vh;
+    }
+    
+    .logo {
+        margin: 0 auto;
+    }
+    
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-text {
+        width: 90%;
+        margin: 1em auto;
+        margin-bottom: 17em;
+    }
+
+    .card-container {
+        margin: 0 auto;
+        transform: translate(25%, -60%);
+    }
+
+    footer {
+        padding-top: 50vh;
+    }
+
+    .footer-container {
+        padding-top: 50vh;
+        width: 90%;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        padding: .8em;
+    }
+
+    .counter {
+        gap: .5em;
+    }
+
+    .seconds .time-unit {
+        min-width: fit-content;
+    }
+
+    .signup-counter-main {
+        padding: 0;
+    }
+
+    .signup-body .container {
+        padding-bottom: 1em;
+    }
+}
